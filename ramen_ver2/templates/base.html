@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>blog</title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  </head>
+  <body>
+    {% if user.is_authenticated %}
+      <a href="{% url 'logout' %}">ログアウト</a>
+      <a href="{% url 'create' %}">新規作成</a>
+    {% else %}
+      <a href="{% url 'login' %}">ログイン</a>
+    {% endif %}
+    <h1>hello</h1>
+    {% block body %}
+    {% endblock %}
+
+  </body>
+</html>

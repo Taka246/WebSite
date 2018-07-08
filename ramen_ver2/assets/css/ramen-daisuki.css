@@ -1,0 +1,127 @@
+body{
+	font-family:"Avenir Next";
+}
+
+.header{
+	background-color:lightgreen;
+	background-image:url(../img/tumugu.jpg);
+	background-size: cover;
+	color:#fff;
+	height:720px;
+	min-width: 800px;
+}
+
+.header-logo{
+	float:left;
+	font-size:50px;
+	padding:33px 60px;
+
+}
+
+/*.main{
+	background-color:#bdf7f1;
+	height:500px;
+	min-width: 600px;
+}
+
+.footer{
+	background-color:#ceccf3;
+	height:100px;
+}
+*/
+.menubar {
+   min-width: 600px;
+   padding:45px 15px 0px 170px;
+}
+
+.menubar ul#menu {
+   margin: 0px 0px 0px 15px;
+   padding: 0px;
+   height: 45px;
+   font-size:18px;
+}
+.menubar ul#menu li {
+   width: 170px;
+   height: 45px;
+   float: left;
+   list-style-type: none;
+   position: relative;
+}
+.menubar ul#menu a {
+   background-color: #26D0C9;
+   color: white;
+   line-height: 45px;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   width: 100%;
+   height: 100%;
+   background-image: -moz-linear-gradient(top, #51d9d3 0%, #3bd4ce 50%, #26D0C9 50%, #3bd4ce 100%);
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #51d9d3), color-stop(0.50, #3bd4ce), color-stop(0.50, #26D0C9), color-stop(1, #3bd4ce));
+   text-shadow:0 -1px 0px #1ea6a0,0 1px 0px #22bbb4;
+   border-left:1px solid #1ea6a0;
+   box-shadow: 1px 0px 0px rgba(124,226,222,0.3) inset,
+              -1px 0px 0px rgba(124,226,222,0.3) inset,
+               0px 1px 1px rgba(26,145,140,0.1) inset,
+               0px -1px 1px rgba(26,145,140,0.3) inset,
+               0px 1px 3px #26D0C9;
+}
+.menubar ul#menu a:hover {
+   background-color: #22bbb4; /* メニュー項目にマウスが載ったときの背景色 */
+   background-image: -moz-linear-gradient(top, #26D0C9 0%, #22bbb4 50%, #1ea6a0 50%, #22bbb4 100%);
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #26D0C9), color-stop(0.50, #22bbb4), color-stop(0.50, #1ea6a0), color-stop(1, #22bbb4));
+   box-shadow: 1px 0px 0px rgba(124,226,222,0) inset,
+              -1px 0px 0px rgba(124,226,222,0) inset,
+               0px 1px 1px rgba(26,145,140,0.1) inset,
+               0px -1px 1px rgba(26,145,140,0.3) inset,
+               0px 1px 3px #26D0C9;
+}
+/* メニューバー直後のClearfix */
+.menubar ul#menu { zoom:1; }
+.menubar ul#menu:after {
+   height: 0; visibility: hidden; content: "."; display: block; clear: both;
+}
+
+#menu li:first-child a{
+   border-radius:5px 0 0 5px;
+   border-left:1px solid #26D0C9;
+   box-shadow:-1px 0px 0px rgba(124,226,222,0.3) inset,
+               0px 1px 1px rgba(26,145,140,0.1) inset,
+               0px -1px 1px rgba(26,145,140,0.3) inset,
+               0px 1px 3px #26D0C9;
+}
+
+#menu li:last-child a{
+   border-radius:0 5px 5px 0;
+   box-shadow: 1px 0px 0px rgba(124,226,222,0.3) inset,
+               0px 1px 1px rgba(26,145,140,0.1) inset,
+               0px -1px 1px rgba(26,145,140,0.3) inset,
+               0px 1px 3px #26D0C9;
+}
+
+
+.menubar ul#menu ul.sub {
+   margin: 0px;
+   padding: 0px;
+   display: none;
+   position: absolute;
+}
+
+.menubar ul#menu ul.sub li {
+   width: 170px;
+   height: 45px;
+   
+}
+
+.menubar ul#menu ul.sub li a {
+   line-height: 45px;
+   text-align: left; 
+   text-indent: 10px;  
+   border:1px solid #26D0C9;
+   border-radius:5px 5px 5px 5px;
+}
+
+.menubar ul#menu ul.sub li a:hover {
+   background-color: #22bbb4;
+}
+
