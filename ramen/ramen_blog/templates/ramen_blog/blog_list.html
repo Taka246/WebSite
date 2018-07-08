@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% for blog in object_list %}
+
+<dir>
+  <h1><a href="{% url 'detail' blog.pk %}">{{ blog.content }}</a></h1><br>
+  <h1>{{ blog.created_at }}</h1>
+</dir>
+
+{% endfor %}
+{% include 'ramen_blog/page.html' %}
+{% endblock %}
